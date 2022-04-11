@@ -1,0 +1,41 @@
+package ac1;
+
+
+public class Batalha {
+    
+    private int outroPokemonVida;
+    private int novoPokemonVida;
+    private String outroPokemonNome;
+    private String novoPokemonNome;
+    
+    
+    
+    public void novoPokemon(String nome, int vida){        
+        this.novoPokemonVida = vida;
+        this.novoPokemonNome = nome;
+        
+    }
+    
+    public void outroPokemon(String nome, int vida){        
+        this.outroPokemonVida = vida;
+        this.outroPokemonNome = nome;        
+    }
+    public void iniciaBatalha(){
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("A BATALHA COMEÇOU");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~");
+
+        
+        if(novoPokemonVida > outroPokemonVida){
+            
+            System.out.println("Você venceu! Parabéns " + novoPokemonNome);
+            
+        }else{
+            
+            System.out.println("Você perdeu! Vencedor: " + outroPokemonNome);
+            
+        }
+}
+}
