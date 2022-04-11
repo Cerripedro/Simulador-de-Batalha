@@ -1,0 +1,25 @@
+package ac1;
+
+
+public class AC1 {
+
+    
+    public static void main(String[] args) {
+        Pokemon novoPokemon = new Pokemon("Sceptile", "Planta", 62);
+        Pokemon outroPokemon = new Pokemon("Pidgeot", "Normal", 49);
+        
+        
+        Batalha batalha1 = new Batalha();
+               
+        System.out.println("Meu Pokémon: ");
+        novoPokemon.mostraPokemon();
+        System.out.println("Pokémon Inimigo: ");
+        outroPokemon.mostraPokemon();
+        
+        batalha1.novoPokemon(novoPokemon.getNome(),novoPokemon.getVida());
+        batalha1.outroPokemon(outroPokemon.getNome(),outroPokemon.getVida());
+        
+        batalha1.iniciaBatalha();
+    }
+    
+}
